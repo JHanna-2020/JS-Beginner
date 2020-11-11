@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="resultText">
+    <p>Welcome <b id="boldStuff2"></b>
+    </p>
+    <p>Your email is <b id="boldStuff3"></b></p>
+   </div>
+   <script>
+        function getInfo() {
+            //getting Name
+            var nameInput = document.getElementById('nameInput').value;
+            document.getElementById('boldStuff2').innerHTML = nameInput;
+            //getting email
+            var emailInput = document.getElementById('emailInput').value;
+            document.getElementById('boldStuff3').innerHTML = emailInput;
+        }
+    </script>
+    <br>
+    <br>
+    <form action="" method="get">
+        <label id= "nameLabel">Full Name: </label>
+                <input type="text" name="" id="nameInput">
+               <br>
+               <br>
+            <label id="emailLabel">Email: </label>
+                <input type="text" name="" id="emailInput">
+                <br>
+                <br>
+                <input id="submitBTN" type='button' onclick='getInfo()' value='Submit' />
+    </form>
+    <p id="nameText"></p>
+</body>
+
+</html>
